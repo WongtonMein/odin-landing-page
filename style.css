@@ -31,7 +31,49 @@ Quote text
 */
 
 body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header, .footer {
+    background-color: #1f2937;
+    color: white;
+}
+
+.header {
+    /* display: flex;    */
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.quote {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding: 75px 100px;
     display: flex;
     flex-direction: column;
 }
 
+.quote-text {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    align-self: center;
+    max-width: 900px;
+
+}
+
+.quote-author {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bolder;
+    font-size: 24px;
+}
