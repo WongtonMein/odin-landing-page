@@ -32,27 +32,81 @@ Quote text
 
 body {
     font-family: 'Roboto', sans-serif;
+    border: 0;
 }
 
 .header, .footer {
-    background-color: #1f2937;
-    color: white;
+    background-color: #1F2937;
+    padding: 0 100px;
 }
 
-.header {
-    /* display: flex;    */
+.header-top, .header-bottom {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header-links {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
 }
 
 .header-bottom {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 50px 0;
+    /* gap: 10px; */
 }
 
+.header-description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header-description-title {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.header-description-text {
+    max-width: 400px;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button {
+    color: white;
+    background-color: #3882F6;
+    padding: 4px 20px;
+    border-radius: 10px;
+}
+
+.header-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    background-color: grey;
+    color: white;
+}
 
 .quote {
     background-color: #E5E7EB;
@@ -68,7 +122,6 @@ body {
     font-style: italic;
     align-self: center;
     max-width: 900px;
-
 }
 
 .quote-author {
