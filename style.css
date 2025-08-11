@@ -33,11 +33,13 @@ Quote text
 body {
     font-family: 'Roboto', sans-serif;
     border: 0;
+    min-width: 700px;
 }
 
 .header, .footer {
     background-color: #1F2937;
-    padding: 0 100px;
+    padding: 0 150px;
+    /* margin: 0 150px; */
 }
 
 .header-top, .header-bottom {
@@ -70,14 +72,14 @@ a {
 .header-bottom {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
-    /* gap: 10px; */
+    padding: 80px 0;
 }
 
 .header-description {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+    min-width: 300px;
 }
 
 .header-description-title {
@@ -103,10 +105,52 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 300;
     padding: 40px 80px;
     background-color: grey;
     color: white;
 }
+
+.information-header {
+    display: flex;
+    justify-content: center;
+    padding: 36px 0;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;;
+}
+
+.information-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 100px;
+    /* padding: 0 100px 50px 50px; */
+}
+
+.information-image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.information-image {
+    max-width: 75px;
+    max-height: 75px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #3882F6;
+    padding: 75px;
+    border-radius: 10px;
+}
+
+.information-text {
+    max-width: 150px;
+    text-align: center;
+}
+
 
 .quote {
     background-color: #E5E7EB;
